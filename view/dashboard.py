@@ -1,7 +1,7 @@
 from time import sleep
 
-# from controller.UsuarioController import cadastrar_usuario, listar_usuario, deletar_usuario
-# from controller.DespesasController import cadastrar_despesa, listar_despesas, deletar_despesa
+from controller.UsuarioController import cadastrar_usuario, listar_usuarios, deletar_usuario
+from controller.DespesaController import cadastrar_despesa, listar_despesas, deletar_despesa
 
 def menu():
     print("=====================================")
