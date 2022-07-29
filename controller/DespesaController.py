@@ -16,7 +16,7 @@ def cadastrar_despesa():
     nome = input("Nome Despesa: ")
     categoria = input("Categoria: ")
     valor = float(input("valor: "))
-    
+    coop = int(input("compartilhado? (S/N"))
 
 def listar_despesas():
     pass
