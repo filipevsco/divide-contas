@@ -7,11 +7,10 @@ def cadastrar_despesa():
     print("-------------------------")
     print
     ##### PENDENTE LISTAR USUÁRIOS 
-    for usuario in usuarios:
-        print(f'{usuario.id} - {usuario.nome}')
+  #  for usuario in usuarios:
+  #     print(f'{usuario.id} - {usuario.nome}')
         
-    
-    
+
     
     nome = input("Nome Despesa: ")
     categoria = input("Categoria: ")
