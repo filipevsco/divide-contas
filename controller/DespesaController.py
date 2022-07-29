@@ -4,6 +4,11 @@ from time import sleep
 
 def cadastrar_despesa():
     print("=== CADASTRAR DESPESA ===")
+    print("-------------------------")
+    nome = input("Nome Despesa: ")
+    categoria = input("Categoria: ")
+    valor = float(input("valor: "))
+    
 
 def listar_despesas():
     pass
