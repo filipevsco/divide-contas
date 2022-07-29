@@ -5,6 +5,14 @@ from time import sleep
 def cadastrar_despesa():
     print("=== CADASTRAR DESPESA ===")
     print("-------------------------")
+    print
+    ##### PENDENTE LISTAR USUÁRIOS 
+    for usuario in usuarios:
+        print(f'{usuario.id} - {usuario.nome}')
+        
+    
+    
+    
     nome = input("Nome Despesa: ")
     categoria = input("Categoria: ")
     valor = float(input("valor: "))
