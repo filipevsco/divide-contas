@@ -10,11 +10,9 @@ def cadastrar_despesa():
   #  for usuario in usuarios:
   #     print(f'{usuario.id} - {usuario.nome}')
     print("-------------------------")
-    codigo = int(input("Digite o código: "))
-    
-    for usuario in usuarios:
-        if usuario.id == codigo:
-            usuario = usuario
+    usuario = int(input("Digite o nome de usuario: "))
+    if usuario == usuario.name:
+        usuario = usuario
     nome = input("Nome Despesa: ")
     categoria = input("Categoria: ")
     valor = float(input("valor: "))
