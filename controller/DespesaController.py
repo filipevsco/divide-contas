@@ -6,7 +6,7 @@ def cadastrar_despesa():
     print("=== CADASTRAR DESPESA ===")
     print("-------------------------")
     print("-------------------------")
-    pagante = int(input("Digite o nome de usuario: "))
+    pagante = input("Digite o nome de usuario: ")
     if pagante == usuario.name:
         pagante = usuario
     nome = input("Nome Despesa: ")
