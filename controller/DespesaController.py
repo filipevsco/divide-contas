@@ -20,6 +20,7 @@ def cadastrar_despesa():
     
     despesa = Despesa(pagante, nome, categoria, valor, coop)
     print("Despesa cadastrada com sucesso!")
+    sleep(1)
     print(despesa)
 
 def listar_despesas():
