@@ -27,6 +27,7 @@ def listar_despesas():
     for despesa in despesas:
         print(despesa)
     print("----------------------------")
+    sleep(2)
 
 def deletar_despesa():
     pass
