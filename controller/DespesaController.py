@@ -19,6 +19,8 @@ def cadastrar_despesa():
     coop = int(input("compartilhado? (S/N"))
     
     despesa = Despesa(pagante, nome, categoria, valor, coop)
+    print("Despesa cadastrada com sucesso!")
+    print(despesa)
 
 def listar_despesas():
     pass
