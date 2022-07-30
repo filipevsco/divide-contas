@@ -24,7 +24,8 @@ def cadastrar_despesa():
 def listar_despesas():
     print("=== LISTAGEM DE DESPESAS ===")
     print("----------------------------")
-    for despesa in Despesas
+    for despesa in despesas:
+        print(despesa)
 
 def deletar_despesa():
     pass
