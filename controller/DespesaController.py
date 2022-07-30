@@ -5,10 +5,6 @@ from time import sleep
 def cadastrar_despesa():
     print("=== CADASTRAR DESPESA ===")
     print("-------------------------")
-    print
-    ##### PENDENTE LISTAR USUÁRIOS 
-  #  for usuario in usuarios:
-  #     print(f'{usuario.id} - {usuario.nome}')
     print("-------------------------")
     pagante = int(input("Digite o nome de usuario: "))
     if pagante == usuario.name:
