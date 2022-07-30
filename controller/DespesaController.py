@@ -2,9 +2,10 @@ from time import sleep
 
 # from model.despesa import Despesa
 
+despesas = []
+
 def cadastrar_despesa():
     print("=== CADASTRAR DESPESA ===")
-    print("-------------------------")
     print("-------------------------")
     pagante = input("Digite o nome de usuario: ")
     if pagante == usuario.name:
@@ -20,7 +21,9 @@ def cadastrar_despesa():
     print(despesa)
 
 def listar_despesas():
-    pass
+    print("=== LISTAGEM DE DESPESAS ===")
+    print("----------------------------")
+    for despesa in Despesas
 
 def deletar_despesa():
     pass
