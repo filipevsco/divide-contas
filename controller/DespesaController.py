@@ -20,6 +20,8 @@ def cadastrar_despesa():
     print("Despesa cadastrada com sucesso!")
     sleep(1)
     print(despesa)
+    sleep(2)
+    menu()
 
 def listar_despesas():
     print("=== LISTAGEM DE DESPESAS ===")
