@@ -29,6 +29,7 @@ def listar_despesas():
     for despesa in despesas:
         print(despesa)
     print("----------------------------")
+    print("Fim da Lista")
     sleep(2)
     menu()
 
