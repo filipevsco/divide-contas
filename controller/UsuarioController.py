@@ -29,6 +29,9 @@ def listar_usuarios():
             print("------------------")
             print(usuario)
             print("------------------")
+        print("Fim da Lista")
+        sleep(1)
+        menu()
 
 
 def deletar_usuario():
