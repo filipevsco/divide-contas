@@ -5,7 +5,7 @@ from controller.DespesaController import cadastrar_despesa, listar_despesas, del
 
 def menu():
     print("=====================================")
-    print("========= DIVIDE CONTAS ============")
+    print("========= DIVIDE CONTAS =============")
     print("=====================================")
 
     print("Por favor, selecione uma opção:")
