@@ -24,6 +24,7 @@ def cadastrar_despesa():
     menu()
 
 def listar_despesas():
+<<<<<<< HEAD
     print("=== LISTAGEM DE DESPESAS ===")
     print("----------------------------")
     for despesa in despesas:
