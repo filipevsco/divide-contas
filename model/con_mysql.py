@@ -10,5 +10,4 @@ def conectar():
         )
         return conn
     except MySQLdb.error as e:
-        pass
-    
+        print("erro ao conectar ao banco de dados.")
