@@ -1,4 +1,10 @@
 import MySQLdb
 
 def conectar():
-    pass
+    try:
+        conn = MySQLdb.conect(
+            db=''
+            
+            
+            
+            )
