@@ -3,8 +3,9 @@ import MySQLdb
 def conectar():
     try:
         conn = MySQLdb.connect(
-            db=''
-            
-            
-            
+            db='divide_contas',
+            host='localhost',
+            user='root',
+            passwd='root'
             )
+            return conn
