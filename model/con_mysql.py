@@ -7,5 +7,8 @@ def conectar():
             host='localhost',
             user='root',
             passwd='root'
-            )
-            return conn
+        )
+        return conn
+    except MySQLdb.error as e:
+        pass
+    
