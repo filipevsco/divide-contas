@@ -5,10 +5,10 @@ def conectar():
         conn = MySQLdb.connect(
             db='divide_contas',
             host='localhost',
-            user='root',
-            passwd='root'
+            user='admin',
+            passwd='admin'
         )
         return conn
-    except MySQLdb.error as e:
+    except MySQLdb.Error as e:
         print("erro ao conectar ao banco de dados.")
     
