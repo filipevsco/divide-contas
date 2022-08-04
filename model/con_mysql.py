@@ -2,7 +2,7 @@ import MySQLdb
 
 def conectar():
     try:
-        conn = MySQLdb.conect(
+        conn = MySQLdb.connect(
             db=''
             
             
