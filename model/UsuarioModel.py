@@ -11,6 +11,9 @@ def conectar():
             user='admin',
             passwd='admin'
             )
+        return conectar
+    except MySQLdb.Error as erro:
+        
 
 def usuario_db(nome, salario_medio):
      
