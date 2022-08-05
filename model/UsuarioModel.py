@@ -13,7 +13,7 @@ def conectar():
             )
         return conectar
     except MySQLdb.Error as erro:
-        
+        print(f'Erro ao conectar no banco de dados: {erro}')
 
 def usuario_db(nome, salario_medio):
      
