@@ -1,6 +1,6 @@
 import MySQLdb
 
-def conectar():
+def conexao():
     '''
     conectar ao banco de dados
     '''
@@ -22,7 +22,8 @@ def desconectar():
     '''
     if conectar:
         conectar.close()
+        
 
-def usuario_db(nome, salario_medio):
-     
+def cadaatrar_usuario_db(nome, salario_medio):
+     conectar = conexao()
     
