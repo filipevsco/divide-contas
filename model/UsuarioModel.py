@@ -6,7 +6,10 @@ def conectar():
     '''
     try:
         conectar = MySQLdb.connect(
-            
+            db='divide_contas',
+            host='localhost',
+            user='admin',
+            passwd='admin'
             )
 
 def usuario_db(nome, salario_medio):
