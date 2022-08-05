@@ -20,8 +20,8 @@ def desconectar():
     '''
     deeconectar do banco de dados
     '''
-    if conectar:
-        conectar.close()
+    if conexao:
+        conexao.close()
         
 
 def cadaatrar_usuario_db(nome, salario_medio):
