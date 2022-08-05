@@ -1,6 +1,6 @@
 from time import sleep
 
-from model.UsuarioModel import usuario
+from model.UsuarioModel import usuario_db
 
 
 def cadastrar_usuario():
