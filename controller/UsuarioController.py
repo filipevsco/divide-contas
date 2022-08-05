@@ -1,8 +1,6 @@
 from time import sleep
 
-# from model.usuario import Usuario
-
-usuarios = []
+from model.UsuarioModel import usuario
 
 
 def cadastrar_usuario():
@@ -11,12 +9,11 @@ def cadastrar_usuario():
     nome = input("Nome: ")
     salario_medio = float(input("Salário Médio: "))
 
-    usuario = Usuario("nome", "salario_medio")
-    usuarios.append(usuario)
+    usuario_db("nome", "salario_medio")
     print("Criando....")
     sleep(1)
     print("Usuário criado com sucesso")
-    print(usuario)
+#    print(usuario)
     sleep(1)
     menu()
 
