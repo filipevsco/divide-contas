@@ -27,4 +27,5 @@ def desconectar():
 def cadaatrar_usuario_db(nome, salario_medio):
     
      conectar = conexao()
+     cursor = conectar.cursor()
     
