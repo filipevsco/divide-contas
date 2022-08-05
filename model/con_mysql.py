@@ -2,6 +2,9 @@ import MySQLdb
 
 
 def conectar():
+    '''
+    conectar com o banco de dados
+    '''
     try:
         conn = MySQLdb.connect(
             db='divide_contas',
