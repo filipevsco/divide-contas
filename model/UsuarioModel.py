@@ -35,3 +35,7 @@ def listar_usuario_db():
     conectar = conexao()
     cursor = conectar.cursor()
     cursor.execute("SELECT * FROM usuarios")
+    usuarios = cursor.ferchall()
+    
+    if usuarios:
+        pass
