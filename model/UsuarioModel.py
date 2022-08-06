@@ -16,7 +16,7 @@ def conexao():
         print(f'Erro ao conectar no banco de dados: {erro}')
 
 
-def desconectar():
+def desconectar(conexao):
     '''
     deeconectar do banco de dados
     '''
