@@ -26,11 +26,12 @@ def desconectar(conexao):
 
 def cadaatrar_usuario_db(nome, salario_medio):
     
-     conectar = conexao()
-     cursor = conectar.cursor()
-  
+    conectar = conexao()
+    cursor = conectar.cursor()
+    cursor.execute(f"INSERT INTO )
     
 def listar_usuario_db():
     
     conectar = conexao()
     cursor = conectar.cursor()
+    cursor.execute("SELECT * FROM usuarios")
