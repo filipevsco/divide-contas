@@ -38,4 +38,5 @@ def listar_usuario_db():
     usuarios = cursor.ferchall()
     
     if usuarios:
-        pass
+        for usuario in usuarios:
+        print(f'ID: {usuario[0]}')
