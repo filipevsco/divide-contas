@@ -39,4 +39,5 @@ def listar_usuario_db():
     
     if usuarios:
         for usuario in usuarios:
-        print(f'ID: {usuario[0]}')
+            print(f'ID: {usuario[0]}')
+            print(f'nome: {usuario[1]')
