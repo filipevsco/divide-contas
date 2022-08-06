@@ -44,3 +44,5 @@ def listar_usuario_db():
             print("----------------")
     else:
         print("lista vazia")
+    
+    desconectar(conexao)
