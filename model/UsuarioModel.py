@@ -31,6 +31,9 @@ def cadaatrar_usuario_db(nome, salario_medio):
     cursor.execute(f"INSERT INTO usuarios (nome, salario_medio)) VALUE ('{nome}', {salario_medio})
     conectar.commit()
     
+    if cursor.rowcount == 1:
+        print("Usuario cadastrado com sucesso")
+    
 def listar_usuario_db():
     
     conectar = conexao()
