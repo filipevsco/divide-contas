@@ -33,6 +33,8 @@ def cadaatrar_usuario_db(nome, salario_medio):
     
     if cursor.rowcount == 1:
         print("Usuario cadastrado com sucesso")
+    else:
+        print("erro ao efetuar cadastro")
     
 def listar_usuario_db():
     
