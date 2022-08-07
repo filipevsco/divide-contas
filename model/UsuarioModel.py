@@ -29,6 +29,7 @@ def cadaatrar_usuario_db(nome, salario_medio):
     conectar = conexao()
     cursor = conectar.cursor()
     cursor.execute(f"INSERT INTO usuarios (nome, salario_medio)) VALUE ('{nome}', {salario_medio})
+    conectar.commit()
     
 def listar_usuario_db():
     
