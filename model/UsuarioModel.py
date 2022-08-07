@@ -25,10 +25,10 @@ def desconectar(conexao):
         
 
 def cadaatrar_usuario_db(nome, salario_medio):
-    
+
     conectar = conexao()
     cursor = conectar.cursor()
-    cursor.execute(f"INSERT INTO )
+    cursor.execute(f"INSERT INTO divide_contas (nome, salario_medio)) VALUES 
     
 def listar_usuario_db():
     
