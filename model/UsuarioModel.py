@@ -28,7 +28,7 @@ def cadaatrar_usuario_db(nome, salario_medio):
 
     conectar = conexao()
     cursor = conectar.cursor()
-    cursor.execute(f"INSERT INTO divide_contas (nome, salario_medio)) VALUES 
+    cursor.execute(f"INSERT INTO divide_contas (nome, salario_medio)) VALUE ('{nome}', {salario_medio})
     
 def listar_usuario_db():
     
