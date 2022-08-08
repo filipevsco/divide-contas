@@ -8,7 +8,7 @@ def cadastrar_usuario():
     nome = input("Nome: ")
     salario_medio = float(input("Salário Médio: "))
 
-    ModelUser.cadastrar_usuario_db("nome", "salario_medio")
+    ModelUser.cadastrar_usuario_db(nome, salario_medio)
     print("Criando....")
     sleep(1)
     print("Usuário criado com sucesso")

@@ -30,7 +30,7 @@ def cadastrar_usuario_db(nome, salario_medio):
     '''
     conexao = conectar()
     cursor = conexao.cursor()
-    cursor.execute(f"INSERT INTO usuarios (nome, salario_medio)) VALUE ('{nome}', {salario_medio}")
+    cursor.execute(f"INSERT INTO usuario (nome, salario_medio) VALUES ('{nome}', {salario_medio})")
     conexao.commit()
     
     if cursor.rowcount == 1:
