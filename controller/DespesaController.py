@@ -1,6 +1,6 @@
 from time import sleep
 
-# from model.despesa import Despesa
+# from db.despesa import Despesa
 
 despesas = []
 

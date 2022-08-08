@@ -1,34 +1,10 @@
-import MySQLdb
+from db import mysql
 
-def conectar():
-    '''
-    conectar ao banco de dados / connect to database
-    '''
-    try:
-        conexao = MySQLdb.connect(
-            db='divide_contas',
-            host='localhost',
-            user='admin',
-            passwd='admin'
-            )
-        return conexao
-    except MySQLdb.Error as erro:
-        print(f'Erro ao conectar no banco de dados: {erro}')
-
-
-def desconectar(conexao):
-    '''
-    desconectar do banco de dados / desconnect to database
-    '''
-    if conexao:
-        conexao.close()
-        
-
-def cadastrar_usuario_db(nome, salario_medio):
+def cadastrar_usuario(nome, salario_medio):
     '''
     cadastrar novo usuario / add new user
     '''
-    conexao = conectar()
+    conexao = mysql.conectar()
     cursor = conexao.cursor()
     cursor.execute(f"INSERT INTO usuario (nome, salario_medio) VALUES ('{nome}', {salario_medio})")
     conexao.commit()
@@ -37,11 +13,11 @@ def cadastrar_usuario_db(nome, salario_medio):
         print(f"Usuario {nome} cadastrado com sucesso")
     else:
         print("erro ao efetuar cadastro")
-    desconectar(conexao)
+    mysql.desconectar(conexao)
     
-def listar_usuario_db():
+def listar_usuario():
     
-    conexao = conectar()
+    conexao = mysql.conectar()
     cursor = conexao.cursor()
     cursor.execute("SELECT * FROM usuario")
     usuario = cursor.fetchall()
@@ -54,11 +30,11 @@ def listar_usuario_db():
     else:
         print("lista vazia")
 
-    desconectar(conexao)
+    mysql.desconectar(conexao)
 
-def deletar_usuario_db(id):
+def deletar_usuario(id):
 
-    conexao = conectar()
+    conexao = mysql.conectar()
     cursor = conexao.cursor()
     cursor.execute(f"DELETE FROM usuario WHERE id={id}")
     conexao.commit()
@@ -68,4 +44,4 @@ def deletar_usuario_db(id):
     else:
         print("Erro ao tentar deletar usuario")
 
-    desconectar(conexao)
+    mysql.desconectar(conexao)
