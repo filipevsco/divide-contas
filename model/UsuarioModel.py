@@ -50,8 +50,8 @@ def listar_usuario_db():
         for usuario in usuarios:
             print('----LISTANDO USUÁRIOS----')
             print(f'ID: {usuario[0]}')
-            print(f'Nome: {usuario[1]')
-            print(f'Salário: {usuario[2]')
+            print(f'Nome: {usuario[1]}')
+            print(f'Salário: {usuario[2]}')
             print('-------------------------')
     else:
         print("lista vazia")
