@@ -47,13 +47,25 @@ def listar_usuario_db():
     usuario = cursor.fetchall()
     
     if usuario:
+        print('----LISTANDO USUÁRIOS----')
         for user in usuario:
-            print('----LISTANDO USUÁRIOS----')
-            print(f'ID: {user[0]}')
-            print(f'Nome: {user[1]}')
-            print(f'Salário: {user[2]}')
+            print(f'ID: {user[0]} - {user[1]} - {user[2]}')
             print('-------------------------')
     else:
         print("lista vazia")
-    
+
+    desconectar(conexao)
+
+def deletar_usuario_db(id):
+
+    conexao = conectar()
+    cursor = conexao.cursor()
+    cursor.execute(f"DELETE FROM usuario WHERE id={id}")
+    conexao.commit()
+
+    if cursor.rowcount == 1:
+        print("Usuario deletado com sucesso")
+    else:
+        print("Erro ao tentar deletar usuario")
+
     desconectar(conexao)

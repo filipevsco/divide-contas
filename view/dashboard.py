@@ -9,7 +9,7 @@ def menu():
     print("=====================================")
 
     print("Por favor, selecione uma opção:")
-    print("[ 1 ] Cadastrar Novo Usuário")
+    print("[ 1 ] Cadastrar Usuário")
     print("[ 2 ] Cadastrar Despesa")
     print("[ 3 ] Listar Despesas")
     print("[ 4 ] Listar Usuários")
