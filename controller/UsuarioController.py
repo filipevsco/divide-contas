@@ -14,20 +14,16 @@ def cadastrar_usuario():
     print("Usuário criado com sucesso")
 #    print(usuario)
     sleep(1)
-    menu()
 
 
 def listar_usuarios():
-    if not usuarios:
-        print("Sem usuários cadastrados")
-    else:
-        for usuario in usuarios:
-            print("------------------")
-            print(usuario)
-            print("------------------")
-        print("Fim da Lista")
+
+    print("Pesquisando....")
+    sleep(2)
+    print("pronto!")
     sleep(1)
-    menu()
+    ModelUser.listar_usuario_db()
+    sleep(1)
 
 
 def deletar_usuario():

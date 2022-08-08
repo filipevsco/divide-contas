@@ -43,15 +43,15 @@ def listar_usuario_db():
     
     conexao = conectar()
     cursor = conexao.cursor()
-    cursor.execute("SELECT * FROM usuarios")
-    usuarios = cursor.ferchall()
+    cursor.execute("SELECT * FROM usuario")
+    usuario = cursor.fetchall()
     
-    if usuarios:
-        for usuario in usuarios:
+    if usuario:
+        for user in usuario:
             print('----LISTANDO USUÁRIOS----')
-            print(f'ID: {usuario[0]}')
-            print(f'Nome: {usuario[1]}')
-            print(f'Salário: {usuario[2]}')
+            print(f'ID: {user[0]}')
+            print(f'Nome: {user[1]}')
+            print(f'Salário: {user[2]}')
             print('-------------------------')
     else:
         print("lista vazia")
