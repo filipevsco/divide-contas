@@ -4,18 +4,14 @@ from time import sleep
 def cadastrar_despesa():
     print("=== CADASTRAR DESPESA ===")
     pagante = input("Digite o nome de usuario: ")
-    nome = input("Nome Despesa: ")
+    descricao = input("Descrição despesa: ")
     categoria = input("Categoria: ")
     valor = float(input("valor: "))
-    coop = int(input("compartilhado? (S/N"))
+    coop = int(input("compartilhado?(S/N): "))
     
-    despesa = Despesa(pagante, nome, categoria, valor, coop)
-    despesas.append(despesa)
+    db.cadastrar_despesa()
     print("Despesa cadastrada com sucesso!")
     sleep(1)
-    print(despesa)
-    sleep(2)
-    menu()
 
 def listar_despesas():
 
