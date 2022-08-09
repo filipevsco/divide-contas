@@ -1,8 +1,5 @@
 from time import sleep
 
-# from db.despesa import Despesa
-
-despesas = []
 
 def cadastrar_despesa():
     print("=== CADASTRAR DESPESA ===")
