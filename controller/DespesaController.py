@@ -4,8 +4,6 @@ from time import sleep
 def cadastrar_despesa():
     print("=== CADASTRAR DESPESA ===")
     pagante = input("Digite o nome de usuario: ")
-    if pagante == usuario.name:
-        pagante = usuario
     nome = input("Nome Despesa: ")
     categoria = input("Categoria: ")
     valor = float(input("valor: "))
