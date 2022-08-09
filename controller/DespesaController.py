@@ -10,8 +10,6 @@ def cadastrar_despesa():
     coop = int(input("compartilhado?(S/N): "))
     
     db.cadastrar_despesa(pagante, descricao, categoria, valor, coop)
-    print("Despesa cadastrada com sucesso!")
-    sleep(1)
 
 def listar_despesas():
 
