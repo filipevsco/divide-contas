@@ -2,7 +2,8 @@ from db import mysql
 
 
 def listar_despesas():
-    conexao = mysql.conectsr
+    
+    conexao = mysql.conectar()
 
 
 def cadastrar_despesa():
