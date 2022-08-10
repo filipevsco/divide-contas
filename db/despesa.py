@@ -11,7 +11,9 @@ def listar_despesas():
     cursor.execute(f"SELECT * FROM despesas")
     despesas = cursor.ferchall()
     for despesa in despesas:
-        print(f"ID: {despesa[0]}")
+        print(f"ID: {despesa[0]} ")
+    
+    desconectar(conexao)
 
 
 def cadastrar_despesa():
