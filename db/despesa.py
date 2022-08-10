@@ -14,6 +14,8 @@ def listar_despesas():
         print("== LISTA DE DESPESAS ==")
         for despesa in despesas:
             print(f"ID: {despesa[0]} ")
+    else:
+        print("Não existem despesas cadastradas")
     
     mysql.desconectar(conexao)
 
