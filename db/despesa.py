@@ -13,7 +13,7 @@ def listar_despesas():
     for despesa in despesas:
         print(f"ID: {despesa[0]} ")
     
-    desconectar(conexao)
+    mysql.desconectar(conexao)
 
 
 def cadastrar_despesa():
