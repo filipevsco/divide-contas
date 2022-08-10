@@ -7,3 +7,7 @@ def listar_despesas():
 
 def cadastrar_despesa():
     pass
+
+
+def deletar_despesa(id):
+    pass
