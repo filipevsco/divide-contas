@@ -10,8 +10,10 @@ def listar_despesas():
     
     cursor.execute(f"SELECT * FROM despesas")
     despesas = cursor.ferchall()
-    for despesa in despesas:
-        print(f"ID: {despesa[0]} ")
+    if despesas:
+        print("== LISTA DE DESPESAS ==")
+        for despesa in despesas:
+            print(f"ID: {despesa[0]} ")
     
     mysql.desconectar(conexao)
 
