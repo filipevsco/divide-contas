@@ -27,7 +27,10 @@ def cadastrar_despesa():
     conexao. mysql.conectar()
     cursor = conexao.cursor()
     
-    c
+    # codigo inclusao 
+    
+    mysql.desconectar(conexao)
+    
 
 
 def deletar_despesa(id):
