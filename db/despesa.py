@@ -24,6 +24,10 @@ def cadastrar_despesa():
     '''
     cadastrar nova despesa 
     '''
+    conexao. mysql.conectar()
+    cursor = conexao.cursor()
+    
+    c
 
 
 def deletar_despesa(id):
