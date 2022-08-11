@@ -21,7 +21,9 @@ def listar_despesas():
 
 
 def cadastrar_despesa():
-    pass
+    '''
+    cadastrar nova despesa 
+    '''
 
 
 def deletar_despesa(id):
