@@ -30,7 +30,6 @@ def cadastrar_despesa():
     # codigo inclusao 
     
     mysql.desconectar(conexao)
-    
 
 
 def deletar_despesa(id):
