@@ -20,7 +20,7 @@ def listar_despesas():
     mysql.desconectar(conexao)
 
 
-def cadastrar_despesa():
+def cadastrar_despesa(id_usuario, descricao, categoria, valor, coop):
     '''
     cadastrar nova despesa 
     '''
