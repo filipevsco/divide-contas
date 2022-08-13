@@ -26,6 +26,7 @@ def cadastrar_despesa():
     '''
     conexao. mysql.conectar()
     cursor = conexao.cursor()
+    cursor.execute(f"INSERT INTO despesa")
     
     # codigo inclusao 
     
