@@ -23,4 +23,12 @@ def listar_despesas():
     menu()
 
 def deletar_despesa():
-    pass
+    listar_despesas()
+
+    id = int(input("Digite o ID da despesa que deseja deletar: "))
+    id_cofirma = int(input("Confirme o ID da despesa que deseja deletar: "))
+
+    if id == id_cofirma:
+        db.despesa.deletar_usuario(id)
+    else:
+        print("nome invalido, tente novamente")
