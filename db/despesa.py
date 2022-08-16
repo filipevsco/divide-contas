@@ -34,4 +34,7 @@ def cadastrar_despesa(id_usuario, descricao, categoria, valor, coop):
 
 
 def deletar_despesa(id):
+    """
+    deletar usuario
+    """
     pass
