@@ -29,6 +29,6 @@ def deletar_despesa():
     id_cofirma = int(input("Confirme o ID da despesa que deseja deletar: "))
 
     if id == id_cofirma:
-        db.despesa.deletar_usuario(id)
+        db.despesa.deletar_despesa(id)
     else:
         print("nome invalido, tente novamente")
