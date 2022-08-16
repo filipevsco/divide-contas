@@ -37,4 +37,14 @@ def deletar_despesa(id):
     """
     deletar usuario
     """
-    pass
+    conexao = mysql.conectar()
+    cursor = conexao.cursor()
+    cursor.execute(f"DELETE FROM despesa WHERE id={id}")
+    conexao.commit()
+
+    if cursor.rowcount == 1:
+        print("Usuario deletado com sucesso")
+    else:
+        print("Erro ao tentar deletar usuario")
+
+    mysql.desconectar(conexao)
