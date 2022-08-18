@@ -16,7 +16,7 @@ def cadastrar_despesa():
 
 def listar_despesas():
 
-    print("Carregando lista de usuarios....")
+    print("Carregando lista de despesas....")
     sleep(1)
     db.despesa.listar_despesas()
     sleep(1)
