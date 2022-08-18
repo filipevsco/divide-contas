@@ -8,6 +8,7 @@ def cadastrar_despesa():
     id_usuario = input("Digite o nome de usuario: ")
     descricao = input("Descrição despesa: ")
     categoria = input("Categoria: ")
+    mes = input("mes(XX): ")
     valor = float(input("valor: "))
     coop = int(input("compartilhado?(S/N): "))
     
