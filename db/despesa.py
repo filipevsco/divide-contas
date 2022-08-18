@@ -24,12 +24,16 @@ def cadastrar_despesa(id_usuario, descricao, categoria, mes, valor, coop):
     '''
     cadastrar nova despesa 
     '''
-    conexao. mysql.conectar()
+    conexao = mysql.conectar()
     cursor = conexao.cursor()
-    cursor.execute(f"INSERT INTO despesa")
-    
-    # codigo inclusao 
-    
+    cursor.execute(f"INSERT INTO despesa (id_usuario, descricao, categoria, mes, valor, coop) VALUES ('{id_usuario}', '{descricao}', '{categoria}', '{mes}', '{valor}', '{coop}');")
+    cursor.commit()
+
+    if cursor.rowcount == 1:
+        print(f"Despesa {descricao} cadastrada com sucesso")
+    else:
+        print("erro ao efetuar cadastro")
+
     mysql.desconectar(conexao)
 
 
