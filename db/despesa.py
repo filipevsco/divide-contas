@@ -47,8 +47,8 @@ def deletar_despesa(id):
     conexao.commit()
 
     if cursor.rowcount == 1:
-        print("Usuario deletado com sucesso")
+        print("Despesa deletada com sucesso")
     else:
-        print("Erro ao tentar deletar usuario")
+        print("Erro ao tentar deletar despesa")
 
     mysql.desconectar(conexao)
