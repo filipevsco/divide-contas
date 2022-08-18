@@ -4,6 +4,7 @@ from controller.UsuarioController import cadastrar_usuario, listar_usuarios, del
 from controller.DespesaController import cadastrar_despesa, listar_despesas, deletar_despesa
 
 def menu():
+    print("\n"*3)
     print("=====================================")
     print("========= DIVIDE CONTAS =============")
     print("=====================================")
