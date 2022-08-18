@@ -12,7 +12,7 @@ def cadastrar_despesa():
     valor = float(input("valor: "))
     coop = int(input("compartilhado?(S/N): "))
     
-    db.despesa.cadastrar_despesa(id_usuario, descricao, categoria, valor, coop)
+    db.despesa.cadastrar_despesa(id_usuario, descricao, categoria, mes, valor, coop)
 
 def listar_despesas():
 
