@@ -8,8 +8,8 @@ def listar_despesas():
     conexao = mysql.conectar()
     cursor = conexao.cursor()
     
-    cursor.execute(f"SELECT * FROM despesas")
-    despesas = cursor.ferchall()
+    cursor.execute(f"SELECT * FROM despesa")
+    despesas = cursor.fetchall()
     if despesas:
         print("== LISTA DE DESPESAS ==")
         for despesa in despesas:

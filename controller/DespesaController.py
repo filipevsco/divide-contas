@@ -1,5 +1,7 @@
 from time import sleep
 
+import db.despesa
+
 
 def cadastrar_despesa():
     print("=== CADASTRAR DESPESA ===")
@@ -9,18 +11,14 @@ def cadastrar_despesa():
     valor = float(input("valor: "))
     coop = int(input("compartilhado?(S/N): "))
     
-    db.cadastrar_despesa(id_usuario, descricao, categoria, valor, coop)
+    db.despesa.cadastrar_despesa(id_usuario, descricao, categoria, valor, coop)
 
 def listar_despesas():
 
-    print("=== LISTAGEM DE DESPESAS ===")
-    print("----------------------------")
-    for despesa in despesas:
-        print(despesa)
-    print("----------------------------")
-    print("Fim da Lista")
-    sleep(2)
-    menu()
+    print("Carregando lista de usuarios....")
+    sleep(1)
+    db.despesa.listar_despesas()
+    sleep(1)
 
 def deletar_despesa():
     listar_despesas()
