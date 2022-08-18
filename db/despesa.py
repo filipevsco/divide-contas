@@ -13,7 +13,7 @@ def listar_despesas():
     if despesas:
         print("== LISTA DE DESPESAS ==")
         for despesa in despesas:
-            print(f"ID: {despesa[0]} ")
+            print(f"ID: {despesa[0]} - {despesa[2]} - {despesa[5]}")
     else:
         print("Não existem despesas cadastradas")
     
