@@ -4,4 +4,4 @@ def menu_editar_dados():
     print("---MENU DE EDIÇÃO---")
     
     print(" [1] - cadastrar nova categoria")
-    print
+    print(" [2] - editar usuário")
