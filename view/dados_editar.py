@@ -9,4 +9,7 @@ def menu_editar_dados():
     print(" [3] - Excluir usuário")
     print(" [4] - Excluir despesa")
     
-    opcao = input("Digite uma opcao: ")
+    opcao = int(input("Digite uma opcao: "))
+    
+    if opcao == 1:
+        pass
