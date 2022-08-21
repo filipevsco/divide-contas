@@ -8,6 +8,7 @@ def menu_editar_dados():
     print(" [2] - editar usuário")
     print(" [3] - Excluir usuário")
     print(" [4] - Excluir despesa")
+    print(" [0] - Retornar ao menu anterior")
     
     opcao = int(input("Digite uma opcao: "))
     
