@@ -18,3 +18,5 @@ def menu_editar_dados():
         pass
     elif opcao == 3:
         pass
+    elif opcao ==4:
+        pass
