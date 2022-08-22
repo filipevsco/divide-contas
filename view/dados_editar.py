@@ -18,5 +18,9 @@ def menu_editar_dados():
         pass
     elif opcao == 3:
         pass
-    elif opcao ==4:
+    elif opcao == 4:
         pass
+    elif opcap == 0:
+        exit()
+    else:
+        print("opcao invalida")
