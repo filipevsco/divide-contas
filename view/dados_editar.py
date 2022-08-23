@@ -2,6 +2,7 @@ from time import sleep
 
 from controller.UsuarioController import cadastrar_usuario, deletar_usuario
 from controller.DespesaController import deletar_despesa
+from controller.CategoriaController import cadastrar_despesa
 
 
 def menu_editar_dados():
@@ -19,7 +20,7 @@ def menu_editar_dados():
     opcao = int(input("Digite uma opção: "))
     
     if opcao == 1:
-        pass
+        cadastrar_despesa()
     elif opcao == 2:
         pass
     elif opcao == 3:
