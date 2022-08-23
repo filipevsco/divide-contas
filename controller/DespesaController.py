@@ -10,7 +10,11 @@ def cadastrar_despesa():
     categoria = input("Categoria: ")
     mes = input("mes(XX): ")
     valor = float(input("valor: "))
-    coop = int(input("compartilhado?(S/N): "))
+    coop = input("compartilhado?(S/N): ")
+    if coop == "S" or "s":
+        coop = 1
+    elif coop == "N" or "n":
+        coop = 0
     
     db.despesa.cadastrar_despesa(id_usuario, descricao, categoria, mes, valor, coop)
 

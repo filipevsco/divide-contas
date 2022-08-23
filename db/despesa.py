@@ -27,7 +27,7 @@ def cadastrar_despesa(id_usuario, descricao, categoria, mes, valor, coop):
     conexao = mysql.conectar()
     cursor = conexao.cursor()
     cursor.execute(f"INSERT INTO despesa (id_usuario, descricao, categoria, mes, valor, coop) VALUES ('{id_usuario}', '{descricao}', '{categoria}', '{mes}', '{valor}', '{coop}');")
-    cursor.commit()
+    conexao.commit()
 
     if cursor.rowcount == 1:
         print(f"Despesa {descricao} cadastrada com sucesso")
