@@ -2,7 +2,7 @@ from time import sleep
 
 from controller.UsuarioController import cadastrar_usuario, listar_usuarios, deletar_usuario
 from controller.DespesaController import cadastrar_despesa, listar_despesas, deletar_despesa
-from .dados_editar import menu_editar_dados
+from .secundario_editar import menu_editar_dados
 
 def menu():
     print("\n"*3)

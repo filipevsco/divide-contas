@@ -1,4 +1,4 @@
-from view.dashboard import menu
+from view.principal_menu import menu
 
 
 def main():

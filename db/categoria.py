@@ -1,5 +1,6 @@
 from db import mysql
 
+
 def cadastrar_categoria(categoria):
     '''
     cadastrar nova categoria

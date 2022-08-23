@@ -3,7 +3,7 @@ from time import sleep
 from controller.UsuarioController import cadastrar_usuario, deletar_usuario
 from controller.DespesaController import deletar_despesa
 from controller.CategoriaController import cadastrar_despesa
-
+import view.principal_menu as principal_menu
 
 def menu_editar_dados():
     print("--------------------")
@@ -32,6 +32,6 @@ def menu_editar_dados():
     elif opcao == 6:
         deletar_despesa()
     elif opcao == 0:
-        exit()
+        principal_menu.menu()
     else:
         print("opção inválida")
