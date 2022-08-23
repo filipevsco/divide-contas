@@ -1,5 +1,4 @@
 from time import sleep
-
 from controller.UsuarioController import cadastrar_usuario, deletar_usuario
 from controller.DespesaController import deletar_despesa
 from controller.CategoriaController import cadastrar_despesa
@@ -35,3 +34,5 @@ def menu_editar_dados():
         principal_menu.menu()
     else:
         print("opção inválida")
+        sleep(1)
+        menu()

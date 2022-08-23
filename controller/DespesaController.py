@@ -1,5 +1,5 @@
 from time import sleep
-
+import view.principal_menu as menu
 import db.despesa
 
 
@@ -24,6 +24,9 @@ def listar_despesas():
     sleep(1)
     db.despesa.listar_despesas()
     sleep(1)
+    print("Tecle ENTER para voltar ao menu")
+    input()
+    menu.menu()
 
 def deletar_despesa():
     listar_despesas()

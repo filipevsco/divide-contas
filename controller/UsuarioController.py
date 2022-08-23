@@ -1,4 +1,5 @@
 from time import sleep
+import view.principal_menu as menu
 import db.usuario
 
 
@@ -21,6 +22,9 @@ def listar_usuarios():
     sleep(1)
     db.usuario.listar_usuario()
     sleep(1)
+    print("Tecle ENTER para voltar ao menu")
+    input()
+    menu.menu()
 
 
 def deletar_usuario():
