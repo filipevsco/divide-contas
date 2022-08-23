@@ -16,7 +16,7 @@ def menu_editar_dados():
     print(" [6] - Excluir despesa")
     print(" [0] - Retornar ao menu anterior")
     
-    opcao = int(input("Digite uma opcao: "))
+    opcao = int(input("Digite uma opção: "))
     
     if opcao == 1:
         pass
@@ -33,4 +33,4 @@ def menu_editar_dados():
     elif opcao == 0:
         exit()
     else:
-        print("opcao invalida")
+        print("opção inválida")
