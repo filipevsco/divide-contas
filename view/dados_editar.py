@@ -1,18 +1,19 @@
 from time import sleep
 
-from controller.UsuarioController import cadastrar_usuario, listar_usuarios, deletar_usuario
-from controller.DespesaController import cadastrar_despesa, listar_despesas, deletar_despesa
+from controller.UsuarioController import cadastrar_usuario, deletar_usuario
+from controller.DespesaController import deletar_despesa
 
 
 def menu_editar_dados():
     print("--------------------")
     print("---MENU DE EDIÇÃO---")
     
-    print(" [1] - cadastrar nova categoria")
+    print(" [1] - Cadastrar nova categoria")
     print(" [2] - Excluir categoria")
-    print(" [2] - editar usuário")
-    print(" [3] - Excluir usuário")
-    print(" [4] - Excluir despesa")
+    print(" [3] - Cadastrar novo usuário")
+    print(" [4] - Editar usuário")
+    print(" [5] - Excluir usuário")
+    print(" [6] - Excluir despesa")
     print(" [0] - Retornar ao menu anterior")
     
     opcao = int(input("Digite uma opcao: "))
@@ -22,10 +23,14 @@ def menu_editar_dados():
     elif opcao == 2:
         pass
     elif opcao == 3:
-        pass
+        cadastrar_usuario()
     elif opcao == 4:
         pass
-    elif opcap == 0:
+    elif opcao == 5:
+        deletar_usuario()
+    elif opcao == 6:
+        deletar_despesa()
+    elif opcao == 0:
         exit()
     else:
         print("opcao invalida")
