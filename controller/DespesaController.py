@@ -5,7 +5,7 @@ import db.despesa
 
 def cadastrar_despesa():
     print("=== CADASTRAR DESPESA ===")
-    id_usuario = input("Digite o nome de usuario: ")
+    id_usuario = input("Digite o ID de usuário: ")
     descricao = input("Descrição despesa: ")
     categoria = input("Categoria: ")
     mes = input("mes(XX): ")
