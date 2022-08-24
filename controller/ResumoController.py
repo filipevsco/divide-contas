@@ -25,4 +25,6 @@ def resumo_total_despesas():
         print(f"Valor total: {total}")
     else:
         print("Não foram encontrada despesas")
+    input("ENTER PARA RETORNAR")
+    menu.menu()
 

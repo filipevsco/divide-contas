@@ -1,7 +1,6 @@
 from time import sleep
-
-from controller.UsuarioController import cadastrar_usuario, listar_usuarios, deletar_usuario
-from controller.DespesaController import cadastrar_despesa, listar_despesas, deletar_despesa
+from controller.UsuarioController import listar_usuarios
+from controller.DespesaController import cadastrar_despesa, listar_despesas
 from .secundario_editar import menu_editar_dados
 from .secundario_resumo import menu_resumo
 
