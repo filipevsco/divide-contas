@@ -3,6 +3,7 @@ from time import sleep
 from controller.UsuarioController import cadastrar_usuario, listar_usuarios, deletar_usuario
 from controller.DespesaController import cadastrar_despesa, listar_despesas, deletar_despesa
 from .secundario_editar import menu_editar_dados
+from .secundario_resumo import menu_resumo
 
 def menu():
     print("\n")
@@ -15,6 +16,7 @@ def menu():
     print("[ 2 ] Listar Despesas")
     print("[ 3 ] Listar Usuários")
     print("[ 4 ] Menu edicao")
+    print("[ 5 ] Resumos")
     print("[ 0 ] Sair do Programa")
     print("\n")
 
@@ -28,6 +30,8 @@ def menu():
         listar_usuarios()
     elif opcao == 4:
         menu_editar_dados()
+    elif opcao == 5:
+        menu_resumo()
     elif opcao == 0:
         exit()
     else:
