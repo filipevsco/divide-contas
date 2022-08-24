@@ -17,10 +17,12 @@ def resumo_total_despesas():
     despesas = total_despesas_mes(mes)
     if despesas:
         total = 0
+        print("=== TOTAL DESPESAS ===")
         for despesa in despesas:
             print(f"{despesa[2]} - {despesa[5]}")
             total += despesa[5]
-        print(total)
+        print("_____________________")
+        print(f"Valor total: {total}")
     else:
         print("Não foram encontrado despesas")
 

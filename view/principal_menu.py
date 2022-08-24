@@ -10,15 +10,13 @@ def menu():
     print("=====================================")
     print("========= DIVIDE CONTAS =============")
     print("=====================================")
-    print("\n")
 
-    print("[ 1 ] Cadastrar Despesa")
-    print("[ 2 ] Listar Despesas")
-    print("[ 3 ] Listar Usuários")
-    print("[ 4 ] Menu edicao")
-    print("[ 5 ] Resumos")
-    print("[ 0 ] Sair do Programa")
-    print("\n")
+    print("[ 1 ] NOVA DESPESA")
+    print("[ 2 ] LISTA DE DESPESAS")
+    print("[ 3 ] LISTSA DE USUÁRIOS")
+    print("[ 4 ] EDITAR DADOS")
+    print("[ 5 ] RESUMOS")
+    print("[ 0 ] SAIR")
 
     opcao = int(input("DIGITE UMA OPÇÂO: "))
 
