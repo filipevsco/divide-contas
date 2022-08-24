@@ -4,8 +4,8 @@ import db.usuario
 
 
 def cadastrar_usuario():
-    print("=======================")
-    print("=== NOVO USUÁRIO ======")
+    print("=====================================")
+    print("=========== NOVO USUÁRIO ============")
     nome = input("Nome: ")
     salario_medio = float(input("Salário Médio: "))
 

@@ -5,9 +5,10 @@ from controller.CategoriaController import cadastrar_despesa
 import view.principal_menu as principal_menu
 
 def menu_editar_dados():
-    print("--------------------")
-    print("---MENU DE EDIÇÃO---")
-    
+    print("=====================================")
+    print("=========== MENU EDIçÃO =============")
+    print("\n")
+
     print(" [1] - Cadastrar nova categoria")
     print(" [2] - Excluir categoria")
     print(" [3] - Cadastrar novo usuário")

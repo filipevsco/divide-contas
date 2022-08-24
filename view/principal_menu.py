@@ -5,17 +5,18 @@ from controller.DespesaController import cadastrar_despesa, listar_despesas, del
 from .secundario_editar import menu_editar_dados
 
 def menu():
-    print("\n"*3)
+    print("\n")
     print("=====================================")
     print("========= DIVIDE CONTAS =============")
     print("=====================================")
+    print("\n")
 
-    print("Por favor, selecione uma opção:")
     print("[ 1 ] Cadastrar Despesa")
     print("[ 2 ] Listar Despesas")
     print("[ 3 ] Listar Usuários")
     print("[ 4 ] Menu edicao")
     print("[ 0 ] Sair do Programa")
+    print("\n")
 
     opcao = int(input("DIGITE UMA OPÇÂO: "))
 
