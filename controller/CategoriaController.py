@@ -3,9 +3,8 @@ import db.categoria
 import view.principal_menu as menu
 
 def cadastrar_despesa():
-    print("Cadastrar nova categoria")
-    print("------------------------")
-    categoria = input("Digite o nome da categoria: ")
+    print("========= NOVA CATEGORIA ============")
+    categoria = input("DIGITE A NOVA CATEGORIA: : ")
 
     db.categoria.cadastrar_categoria(categoria)
     sleep(2)

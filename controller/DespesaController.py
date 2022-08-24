@@ -4,37 +4,38 @@ import db.despesa
 
 
 def cadastrar_despesa():
-    print("=== CADASTRAR DESPESA ===")
-    id_usuario = input("Digite o ID de usuário: ")
-    descricao = input("Descrição despesa: ")
-    categoria = input("Categoria: ")
-    mes = input("mes(XX): ")
-    valor = float(input("valor: "))
-    coop = input("compartilhado?(S/N): ")
+    print("=========== NOVA DESPESA ============")
+    id_usuario = input("ID USUÁRIO: ")
+    descricao = input("DESPESA: ")
+    categoria = input("CATEGORIA: ")
+    mes = input("MÊS(XX): ")
+    valor = float(input("VALOR: "))
+    coop = input("COMPARTILHADO?(S/N): ")
     if coop == "S" or "s":
         coop = 1
     elif coop == "N" or "n":
         coop = 0
     
     db.despesa.cadastrar_despesa(id_usuario, descricao, categoria, mes, valor, coop)
+    menu.menu()
 
 def listar_despesas():
 
-    print("Carregando lista de despesas....")
+    print("========== LISTA DESPESA ============")
     sleep(1)
     db.despesa.listar_despesas()
     sleep(1)
-    print("Tecle ENTER para voltar ao menu")
+    print("ENTER PARA CONTINUAR")
     input()
     menu.menu()
 
 def deletar_despesa():
     listar_despesas()
 
-    id = int(input("Digite o ID da despesa que deseja deletar: "))
+    id = int(input("ID da despesa que deseja deletar: "))
     id_cofirma = int(input("Confirme o ID da despesa que deseja deletar: "))
 
     if id == id_cofirma:
         db.despesa.deletar_despesa(id)
     else:
-        print("nome invalido, tente novamente")
+        print("Nome invalido, tente novamente")

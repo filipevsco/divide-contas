@@ -13,16 +13,16 @@ def resumo_outros_meses():
 
 
 def resumo_total_despesas():
-    mes = int(input("Digite o mes para consulta(XX): "))
+    mes = int(input("MÊS PARA CONSULTA(XX): "))
     despesas = total_despesas_mes(mes)
     if despesas:
         total = 0
-        print("=== TOTAL DESPESAS ===")
+        print("========= TOTAL DESPESAS ============")
         for despesa in despesas:
             print(f"{despesa[2]} - {despesa[5]}")
             total += despesa[5]
         print("_____________________")
         print(f"Valor total: {total}")
     else:
-        print("Não foram encontrado despesas")
+        print("Não foram encontrada despesas")
 

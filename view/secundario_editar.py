@@ -7,17 +7,16 @@ import view.principal_menu as principal_menu
 def menu_editar_dados():
     print("=====================================")
     print("=========== MENU EDIçÃO =============")
-    print("\n")
 
-    print(" [1] - Cadastrar nova categoria")
-    print(" [2] - Excluir categoria")
-    print(" [3] - Cadastrar novo usuário")
-    print(" [4] - Editar usuário")
-    print(" [5] - Excluir usuário")
-    print(" [6] - Excluir despesa")
-    print(" [0] - Retornar ao menu anterior")
+    print("[ 1 ] NOVA CATEGORIA")
+    print("[ 2 ] EXCLUIR CATEGORIA ")
+    print("[ 3 ] NOVO USUÁRIO")
+    print("[ 4 ] EDITAR USUÁRIO")
+    print("[ 5 ] EXCLUIR USUÁRIO")
+    print("[ 6 ] ESCLUIR DESPESA")
+    print("[ 0 ] MENU ANTERIOR")
     
-    opcao = int(input("Digite uma opção: "))
+    opcao = int(input("OPÇÃO: "))
     
     if opcao == 1:
         cadastrar_despesa()

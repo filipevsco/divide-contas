@@ -4,10 +4,9 @@ import db.usuario
 
 
 def cadastrar_usuario():
-    print("=====================================")
     print("=========== NOVO USUÁRIO ============")
-    nome = input("Nome: ")
-    salario_medio = float(input("Salário Médio: "))
+    nome = input("NOME: ")
+    salario_medio = float(input("SALÁRIO MÉDIO: "))
 
     db.usuario.cadastrar_usuario(nome, salario_medio)
     print("Criando....")
@@ -17,12 +16,11 @@ def cadastrar_usuario():
 
 
 def listar_usuarios():
-
-    print("Carregando lista de usuarios....")
+    print("========= LISTA DE USUÁRIOS ==========")
     sleep(1)
     db.usuario.listar_usuario()
     sleep(1)
-    print("Tecle ENTER para voltar ao menu")
+    print("ENTER PARA CONTINUAR")
     input()
     menu.menu()
 

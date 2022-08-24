@@ -4,12 +4,13 @@ from controller.ResumoController import  resumo_total_despesas
 
 
 def menu_resumo():
-    print("======= EMITIR RESUMOS ======")
-    print("\n")
-    print("[1] Balanço mês atual")
-    print("[2] Balanço outros meses")
-    print("[3] Total despesas por mês")
-    print("[0] Retornar ao menu anterior")
+    print("=====================================")
+    print("============= RESUMOS ===============")
+
+    print("[ 1 ] BALANÇO MÊS ATUAL")
+    print("[ 2 ] BALANÇO OUTROS MESES")
+    print("[ 3 ] TOTAL DESPESAS DO MÊS")
+    print("[ 0 ] MENU ANTERIOR")
 
     opcao = int(input("OPçÃO: "))
 
