@@ -11,13 +11,14 @@ def total_despesas_mes(mes):
     return despesas_mes
 
 
-def despesas_por_usuario(id_usuario, mes):
+def total_despesa_coop(mes):
     conexao = mysql.conectar()
     cursor = conexao.cursor()
 
-    cursor.execute(f"SELECT * FROM despesa WHERE id_usuario={id_usuario} AND mes={mes}")
-    despesas_usuario = cursor.fetchall()
-    mysql.desconectar()
-    return despesas_usuario
-
+    total_coop = 0
+    cursor.execute(f"SELECT valor FROM despesa WHERE coop=1 AND mes={mes}")
+    valores = cursor.fetchall()
+    for valor in valores:
+        total_coop += valor[0]
+    return total_coop
 

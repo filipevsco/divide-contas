@@ -1,6 +1,6 @@
 from time import sleep
 import view.principal_menu as principal_menu
-from controller.ResumoController import  resumo_total_despesas
+from controller.ResumoController import  resumo_total_despesas, resumo_outros_meses
 
 
 def menu_resumo():

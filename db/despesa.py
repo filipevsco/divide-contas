@@ -11,9 +11,8 @@ def listar_despesas():
     cursor.execute(f"SELECT * FROM despesa")
     despesas = cursor.fetchall()
     if despesas:
-        print("== LISTA DE DESPESAS ==")
         for despesa in despesas:
-            print(f"ID: {despesa[0]} - {despesa[2]} - {despesa[5]}")
+            print(f"ID: {despesa[0]}\t{despesa[2]}\t{despesa[5]}")
     else:
         print("Não existem despesas cadastradas")
     

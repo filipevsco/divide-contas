@@ -5,7 +5,6 @@ from .secundario_editar import menu_editar_dados
 from .secundario_resumo import menu_resumo
 
 def menu():
-    print("\n")
     print("=====================================")
     print("========= DIVIDE CONTAS =============")
     print("=====================================")
