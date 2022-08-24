@@ -37,3 +37,4 @@ def deletar_usuario():
         db.usuario.deletar_usuario(id)
     else:
         print("nome invalido, tente novamente")
+
