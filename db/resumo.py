@@ -12,5 +12,12 @@ def total_despesas_mes(mes):
 
 
 def despesas_por_usuario(id_usuario, mes):
-    pass
+    conexao = mysql.conectar()
+    cursor = conexao.cursor()
+
+    cursor.execute(f"SELECT * FROM despesa WHERE id_usuario={id_usuario} AND mes={mes}")
+    despesas_usuario = cursor.fetchall()
+    mysql.desconectar()
+    return despesas_usuario
+
 

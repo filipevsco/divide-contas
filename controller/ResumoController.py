@@ -9,7 +9,10 @@ def resumo_mes_atual():
 
 
 def resumo_outros_meses():
-    pass
+
+    mes = int(input("DIGITE O MÊS(XX): "))
+
+
 
 
 def resumo_total_despesas():
