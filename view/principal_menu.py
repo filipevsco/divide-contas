@@ -11,7 +11,7 @@ def menu():
 
     print("[ 1 ] NOVA DESPESA")
     print("[ 2 ] LISTA DE DESPESAS")
-    print("[ 3 ] LISTSA DE USUÁRIOS")
+    print("[ 3 ] LISTA DE USUÁRIOS")
     print("[ 4 ] EDITAR DADOS")
     print("[ 5 ] RESUMOS")
     print("[ 0 ] SAIR")

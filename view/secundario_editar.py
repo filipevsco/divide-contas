@@ -1,7 +1,7 @@
 from time import sleep
 from controller.UsuarioController import cadastrar_usuario, deletar_usuario
 from controller.DespesaController import deletar_despesa
-from controller.CategoriaController import cadastrar_despesa
+from controller.CategoriaController import cadastrar_categoria, deletar_categoria
 import view.principal_menu as principal_menu
 
 def menu_editar_dados():
@@ -19,9 +19,9 @@ def menu_editar_dados():
     opcao = int(input("OPÇÃO: "))
     
     if opcao == 1:
-        cadastrar_despesa()
+        cadastrar_categoria()
     elif opcao == 2:
-        pass
+        deletar_categoria()
     elif opcao == 3:
         cadastrar_usuario()
     elif opcao == 4:
