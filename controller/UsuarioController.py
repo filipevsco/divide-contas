@@ -5,7 +5,7 @@ import db.usuario
 
 def cadastrar_usuario():
     print("=========== NOVO USUÁRIO ============")
-    nome = input("NOME: ")
+    nome = input("NOME: ").upper()
     salario_medio = float(input("SALÁRIO MÉDIO: "))
 
     db.usuario.cadastrar_usuario(nome, salario_medio)
@@ -26,7 +26,6 @@ def listar_usuarios():
 
 
 def deletar_usuario():
-    listar_usuarios()
 
     id = int(input("Digite o ID de usuario que deseja deletar: "))
     id_cofirma = int(input("Confirme o ID de usuário que deseja deletar: "))
@@ -35,4 +34,5 @@ def deletar_usuario():
         db.usuario.deletar_usuario(id)
     else:
         print("nome invalido, tente novamente")
-
+    sleep(1)
+    menu.menu()

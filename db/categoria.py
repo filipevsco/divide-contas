@@ -23,7 +23,7 @@ def deletar_categoria(categoria):
 
     conexao = mysql.conectar()
     cursor = conexao.cursor()
-    cursor.execute(f"DELETE FROM categoria WHERE nome={categoria}")
+    cursor.execute(f"DELETE FROM categoria WHERE nome='{categoria}'")
     conexao.commit()
 
     if cursor.rowcount == 1:

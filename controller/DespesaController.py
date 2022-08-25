@@ -6,9 +6,9 @@ import db.despesa
 def cadastrar_despesa():
     print("=========== NOVA DESPESA ============")
     id_usuario = input("ID USUÁRIO: ")
-    descricao = input("DESPESA: ")
-    categoria = input("CATEGORIA: ")
-    mes = input("MÊS(XX): ")
+    descricao = input("DESPESA: ").upper()
+    categoria = input("CATEGORIA: ").upper()
+    mes = int(input("MÊS(XX): "))
     valor = float(input("VALOR: "))
     coop = input("COMPARTILHADO?(S/N): ").upper()
     if coop == "S":
