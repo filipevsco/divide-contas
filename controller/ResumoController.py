@@ -1,7 +1,7 @@
 from time import sleep
 
 import view.principal_menu as menu
-from db.resumo import total_despesas_mes, total_despesa_coop
+from db.resumo import total_despesas_mes, total_despesa_coop, proporcional_por_usuario
 
 
 def resumo_mes_atual():
@@ -17,8 +17,11 @@ def resumo_outros_meses():
     '''
     mes = int(input("DIGITE O MÊS(XX): "))
     total_coop = total_despesa_coop(mes)
+    # com o total coop divide proporcional
+    lista_porporcional = proporcional_por_usuario()
     print(f"TOTAL COMPARTILHADO: R${total_coop}")
-
+    for usuario in lista_porporcional:
+        print(f"{usuario[0]}: {usuario[1]*total_coop}")
 
 def resumo_total_despesas():
     mes = int(input("MÊS PARA CONSULTA(XX): "))

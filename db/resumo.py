@@ -20,5 +20,18 @@ def total_despesa_coop(mes):
     valores = cursor.fetchall()
     for valor in valores:
         total_coop += valor[0]
+    mysql.desconectar(conexao)
     return total_coop
 
+def proporcional_por_usuario():
+    conexao = mysql.conectar()
+    cursor = conexao.cursor()
+
+    lista = []
+    cursor.execute(f"SELECT SUM(salario_medio) FROM usuario")
+    soma_salario = cursor.fetchall()[0][0]
+    cursor.execute(f"SELECT nome, salario_medio FROM usuario")
+    salario_medio = cursor.fetchall()
+    for salario in salario_medio:
+        lista.append([salario[0],salario[1]/soma_salario])
+    return lista
