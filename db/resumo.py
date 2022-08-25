@@ -30,8 +30,18 @@ def proporcional_por_usuario():
     lista = []
     cursor.execute(f"SELECT SUM(salario_medio) FROM usuario")
     soma_salario = cursor.fetchall()[0][0]
-    cursor.execute(f"SELECT nome, salario_medio FROM usuario")
+    cursor.execute(f"SELECT nome, salario_medio, id FROM usuario")
     salario_medio = cursor.fetchall()
     for salario in salario_medio:
-        lista.append([salario[0],salario[1]/soma_salario])
+        lista.append([salario[0],salario[1]/soma_salario, salario[2]])
     return lista
+
+
+def despesa_nao_coop(id):
+    conexao = mysql.conectar()
+    cursor = conexao.cursor()
+
+    cursor.execute(f"SELECT SUM(valor) FROM despesa WHERE coop=0 and id_usuario != {id}")
+    valor_nao_coop = cursor.fetchall()[0][0]
+    mysql.desconectar(conexao)
+    return valor_nao_coop
