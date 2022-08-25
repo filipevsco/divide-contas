@@ -13,6 +13,7 @@ def cadastrar_usuario():
     sleep(1)
     print("Usuário criado com sucesso")
     sleep(1)
+    menu.menu()
 
 
 def listar_usuarios():
