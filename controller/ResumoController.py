@@ -10,10 +10,9 @@ def resumo_mes_atual():
 
 def resumo_outros_meses():
     '''
-    somar todos coop do mes e
-    dividir
-    proporcional por usuario
-    somar o nao-coop de outro usuario
+    recebe o mes e devolve o valor proporcional por usuario
+
+    ***************falta somar o nao coop
     '''
     mes = int(input("DIGITE O MÊS(XX): "))
     total_coop = total_despesa_coop(mes)
