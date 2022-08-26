@@ -4,6 +4,8 @@
 
 Aplicativo para facilitar a divisão de custos de moradia entre duas pessoas, com possibilidade de divisao proporcional ao salário de cada usuário.
 
+Através do terminal é possível incluir despesas por usuário e categoria e emitir relatórios mensais com custos para cada usuário.
+
 ### Funcionalidades
 
 - Cadastro de Usuários;
