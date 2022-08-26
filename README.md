@@ -2,7 +2,7 @@
 
 [PYTHON + MYSQL]
 
-Aplicativo para facilitar a divisão de custos de moradia entre pessoas, com possibilidade de dicisao proprocional ao salário.
+Aplicativo para facilitar a divisão de custos de moradia entre duas pessoas, com possibilidade de divisao proporcional ao salário de cada usuário.
 
 ### Funcionalidades
 
