@@ -23,8 +23,7 @@ Na pasta raiz do aplicativo:
 
 ### Primeiro Uso
 
-1. Configuração Banco de Dado cde fg
-MySQL;
+1. Configuração Banco de Dados MySQL;
 2. Inclusão de Usuários;
 3. Inclusão de Categorias;
 4. Pronto para incluir de despesas e emitir relatórios.
