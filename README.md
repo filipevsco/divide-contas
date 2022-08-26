@@ -29,4 +29,4 @@ MySQL;
 
 ### Comentários 
 
-Aplicativo desenvolvimento para praticar funcionalidades da linguagem python + mysql;
+Aplicativo desenvolvido para praticar funcionalidades da linguagem python + mysql;
