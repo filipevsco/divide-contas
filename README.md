@@ -14,6 +14,10 @@ Aplicativo para facilitar a divisão de custos de moradia entre pessoas, com pos
 
 ### Requisitos
 
+### Para rodar
+
+Na pasta raiz do aplicativo:
+> python divide-contas.py
 
 ### Primeiro Uso
 
