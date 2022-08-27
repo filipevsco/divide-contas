@@ -26,7 +26,7 @@ def resumo_outros_meses():
         if not nao_coop:
             valor_devido = "{}: \tR$ {:.2f}".format(nome, proporcao*total_coop)
         else:
-            print("{}: \tR$ {:.2f}".format(nome, proporcao*total_coop + nao_coop))
+            valor_devido = "{}: \tR$ {:.2f}".format(nome, proporcao*total_coop + nao_coop)
         print(valor_devido)
             
     
