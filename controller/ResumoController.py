@@ -16,7 +16,8 @@ def resumo_outros_meses():
     total_coop = total_despesa_coop(mes)
     lista_porporcional = proporcional_por_usuario()
     total_nao_coop = despesa_nao_coop(0)
-
+    print(f"TOTAL COMPARTILHADO: \tR$ {total_coop}")
+    print(f"TOTAL NÃO-COMPARTILHADO: \tR$ {total_nao_coop}")
     for usuario in lista_porporcional:
         nome = usuario[0]
         proporcao = usuario[1]
@@ -27,8 +28,7 @@ def resumo_outros_meses():
         else:
             valor_devido = "{}: \tR$ {:.2f}".format(nome, proporcao*total_coop + nao_coop)
         print(valor_devido)
-    print(f"TOTAL COMPARTILHADO: \tR$ {total_coop}")
-    print(f"TOTAL NÃO-COMPARTILHADO: \tR$ {total_nao_coop}")
+
             
     
     # falta calcular a diferenca para pagar
