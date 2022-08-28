@@ -13,7 +13,7 @@ def resumo_outros_meses():
     recebe o mes e devolve o valor proporcional por usuario
     '''
     mes = int(input("DIGITE O MÊS(XX): "))
-    total_coop = total_despesa_coop(mes)
+    total_compartilhado = total_despesa_coop(mes)
     lista_porporcional = proporcional_por_usuario()
     total_nao_coop = despesa_nao_coop(0)
 
@@ -23,9 +23,9 @@ def resumo_outros_meses():
         id = usuario[2]
         nao_coop = despesa_nao_coop(id)
         if not nao_coop:
-            valor_devido = "{}: \tR$ {:.2f}".format(nome, proporcao*total_coop)
+            valor_devido = "{}: \tR$ {:.2f}".format(nome, proporcao*total_compartilhado)
         else:
-            valor_devido = "{}: \tR$ {:.2f}".format(nome, proporcao*total_coop + nao_coop)
+            valor_devido = "{}: \tR$ {:.2f}".format(nome, proporcao*total_compartilhado + nao_coop)
         print(valor_devido)
 
             
