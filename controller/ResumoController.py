@@ -27,9 +27,6 @@ def resumo_outros_meses():
         else:
             valor_devido = "{}: \tR$ {:.2f}".format(nome, proporcao*total_compartilhado + total_emprestado)
         print(valor_devido)
-
-            
-    
     # falta calcular a diferenca para pagar
 
 
