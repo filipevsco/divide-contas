@@ -22,7 +22,7 @@ def resumo_outros_meses():
         proporcao = usuario[1]
         id = usuario[2]
         nao_coop = despesa_nao_coop(id)
-        if not nao_coop:
+        if not total_emprestado:
             valor_devido = "{}: \tR$ {:.2f}".format(nome, proporcao*total_compartilhado)
         else:
             valor_devido = "{}: \tR$ {:.2f}".format(nome, proporcao*total_compartilhado + total_emprestado)
