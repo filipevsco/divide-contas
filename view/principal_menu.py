@@ -10,10 +10,10 @@ def menu():
     print("=====================================")
 
     print("[ 1 ] NOVA DESPESA")
-    print("[ 2 ] LISTA DE DESPESAS")
+    print("[ 2 ] RESUMOS")
     print("[ 3 ] LISTA DE USUÁRIOS")
     print("[ 4 ] EDITAR DADOS")
-    print("[ 5 ] RESUMOS")
+    print("[ 5 ] LISTA DE DESPESAS")
     print("[ 0 ] SAIR")
 
     opcao = int(input("DIGITE UMA OPÇÂO: "))
