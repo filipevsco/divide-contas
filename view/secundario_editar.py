@@ -9,7 +9,7 @@ def menu_editar_dados():
     print("=========== MENU EDIçÃO =============")
 
     print("[ 1 ] NOVA CATEGORIA")
-    print("[ 2 ] EXCLUIR CATEGORIA ")
+    print("[ 2 ] EXCLUIR CATEGORIA")
     print("[ 3 ] NOVO USUÁRIO")
     print("[ 4 ] EDITAR USUÁRIO")
     print("[ 5 ] EXCLUIR USUÁRIO")
