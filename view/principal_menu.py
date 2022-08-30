@@ -21,13 +21,13 @@ def menu():
     if opcao == 1:
         cadastrar_despesa()
     elif opcao == 2:
-        listar_despesas()
+        menu_resumo()
     elif opcao == 3:
         listar_usuarios()
     elif opcao == 4:
         menu_editar_dados()
     elif opcao == 5:
-        menu_resumo()
+        listar_despesas()
     elif opcao == 0:
         exit()
     else:
